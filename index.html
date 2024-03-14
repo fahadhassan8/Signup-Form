@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Question 01 */
+    #signup-form{
+        max-width: 400px;
+        background-color: antiquewhite;
+        margin: 0 auto;
+        padding: 1em;
+        border-radius: 1em;
+    }
+    label, input{
+        display: block;
+        margin-bottom: 1em;
+    }
+    button{
+        margin-top: 1em;
+    }
+    .submitted-data{
+        margin-top: 2em;
+    }
+</style>
+<body>
+    <!-- Qustion 01     -->
+    <form id="signup-form" onsubmit="signupForm(event)">
+        <label for="name">Name:</label>
+        <input type="text" name="Name" id="name" value="Fahad" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="Email" id="email" placeholder="example@example.com" required>
+
+        <label for="password">Password:</label>
+        <input type="password" name="Password" id="password" required>
+
+        <button type="submit">Sign Up</button>
+
+        <div class="submitted-data" id="submitted-data"></div>
+
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
